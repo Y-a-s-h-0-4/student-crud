@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "jest --runInBand --outputFile=test-results/results.xml --json",
+    "test": "jest --runInBand",
     "build": "echo \"Build step completed\""
   },
   "dependencies": {
@@ -11,6 +11,11 @@
   },
   "devDependencies": {
     "jest": "^29.0.0",
+    "jest-junit": "^16.0.0",
     "supertest": "^6.3.3"
+  },
+  "jest-junit": {
+    "outputDirectory": "test-results",
+    "outputName": "results.xml"
   }
 }
