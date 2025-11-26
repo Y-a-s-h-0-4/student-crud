@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "jest --runInBand",
+    "test": "jest --runInBand --reporters=default --reporters=jest-junit",
     "build": "echo \"Build step completed\""
   },
   "dependencies": {
